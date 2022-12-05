@@ -6,7 +6,8 @@ module.exports = {
     theme: {
         colors: {
             transparent: "transparent",
-            slate: colors.sky,
+            slate: colors.slate,
+			white: colors.white,
             primary: {
                 700: "#2E31E4",
                 600: "#4739ED",
@@ -24,12 +25,12 @@ module.exports = {
             tTertiary: "#6F869F",
             tQuaternary: "#52637A",
         },
-		borderRadius: {
-			"large": "10px",
-		},
         extend: {
             fontFamily: {
                 sans: ["Nunito", "sans-serif"],
+            },
+            borderRadius: {
+                large: "10px",
             },
         },
     },

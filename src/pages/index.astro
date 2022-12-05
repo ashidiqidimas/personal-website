@@ -1,10 +1,77 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
+import Layout from "../layouts/Layout.astro";
+import { Picture } from "@astrojs/image/components";
 ---
 
 <Layout>
-	<main class="h-[200vh]">
-		
-	</main>
+    <main class="h-[calc(100vh)] sm:h-[calc(100vh)] pt-[56px] flex w-full">
+        <div class="mx-2 sm:mx-4 h-full flex flex-col items-center justify-end">
+            <div class="bg-primary-500 h-[80px] w-[1.5px] rounded-full"></div>
+            <div class="mt-4 flex flex-col gap-4">
+                <a href="https://twitter.com/ashidiqidimas">
+                    <Picture
+                        src="https://pub-b01531a0b7c646a4ac161b07b0950d81.r2.dev/twitter-logo.webp"
+                        widths={[96]}
+                        aspectRatio="1:1"
+                        sizes="32px"
+                        alt="A logo of Twitter"
+                    />
+                </a>
+                <a href="linkedin.com/in/dimas-ashidiqi-5432491b1">
+                    <Picture
+                        src="https://pub-b01531a0b7c646a4ac161b07b0950d81.r2.dev/linkedin-logo.webp"
+                        widths={[96]}
+                        aspectRatio="1:1"
+                        sizes="32px"
+                        alt="A logo of LinkedIn"
+                    />
+                </a>
+                <a href="https://github.com/ashidiqidimas">
+                    <Picture
+                        src="https://pub-b01531a0b7c646a4ac161b07b0950d81.r2.dev/github-logo.webp"
+                        widths={[96]}
+                        aspectRatio="1:1"
+                        sizes="32px"
+                        alt="A logo of Github"
+                    />
+                </a>
+            </div>
+            <div class="mt-4 bg-primary-500 h-[140px] w-[1.5px] rounded-full">
+            </div>
+        </div>
+        <div class="flex basis-1/2 items-center justify-center px-8">
+            <div>
+                <p class="ml-[-2px] text-3xl font-medium text-tsecondary">
+                    Hello, I'm
+                </p>
+                <h1 class="ml-[-6px] mt-2 text-7xl font-bold text-primary-500">
+                    Dimas Ashidiqi
+                </h1>
+                <p class="mt-8 text-tsecondary text-xl">
+                    I'm an <span class="font-semibold text-tPrimary"
+                        >iOS developer</span
+                    > who believes every user deserves great user experiece and high-performing
+                    apps.
+                </p>
+                <p class="mt-4 text-tsecondary text-xl">
+                    Based on <span class="font-semibold text-tPrimary"
+                        >Jakarta, Indonesia 🇮🇩</span
+                    >
+                </p>
+                <div class="mt-8 flex gap-4">
+                    <a
+                        href="/contact"
+                        class="bg-primary-500 text-white w-[180px] text-center text-xl font-semibold rounded-large py-3"
+                        >Contact</a
+                    >
+                    <a
+                        href="https://pub-b01531a0b7c646a4ac161b07b0950d81.r2.dev/Dimas-Prabowo-Ashidiqi-Resume.pdf"
+                        class="border-2 border-primary-500 text-primary-400 w-[180px] text-center text-xl font-semibold rounded-large py-3"
+						download=""
+                        >Get Resume</a
+                    >
+                </div>
+            </div>
+        </div>
+    </main>
 </Layout>
