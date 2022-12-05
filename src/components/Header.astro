@@ -1,7 +1,17 @@
 ---
-
+import { Picture } from "@astrojs/image/components";
 ---
 
-<header class="bg-red-500">
-    Dimas Ashidiqi
+<header class="bg-gray-900 fixed z-50 w-full px-6 py-2 flex justify-between items-center">
+    <div class="flex gap-4 items-center">
+        <Picture
+            src="https://pub-b01531a0b7c646a4ac161b07b0950d81.r2.dev/dimas-logo.webp"
+            widths={[48, 60]}
+            aspectRatio="3:2"
+            sizes="(max-width: 640px) 56px, 60px"
+            alt="A logo of Dimas"
+        />
+        <h5 class="text-primary-400 text-2xl font-medium hidden sm:block">Dimas Ashidiqi</h5>
+    </div>
+    <a href="#" class="text-tPrimary bg-gray-700 px-4 py-2 rounded-large hidden sm:block">Contact</a>
 </header>
