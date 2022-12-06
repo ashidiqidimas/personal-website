@@ -1,5 +1,6 @@
 ---
-import "@fontsource/nunito";
+// import "@fontsource/nunito";
+import "../css/global.css"
 import { SEO } from "astro-seo";
 import Header from "../components/Header.astro";
 
@@ -24,7 +25,7 @@ const {
     <body class="bg-gray-900">
         <Header />
         <!-- <div class="pt-14"> -->
-            <slot class="pt-14" />
+        <slot class="pt-14" />
         <!-- </div> -->
     </body>
 </html>
