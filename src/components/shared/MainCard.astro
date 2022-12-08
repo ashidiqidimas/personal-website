@@ -1,0 +1,9 @@
+---
+const { className } = Astro.props
+---
+
+<div
+    class={className + " rounded-3xl py-10 px-4 bg-gradient-to-br from-[#563EF429] to-[#563EF40A] backdrop-blur-2xl shadow-[box-shadow:_0px_4px_24px_-1px_rgba(0,0,0,0.2)] border-[#563EF452] border"}
+>
+    <slot />
+</div>
