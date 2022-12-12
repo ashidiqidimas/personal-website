@@ -1,0 +1,16 @@
+---
+interface Props {
+    href: string;
+    className?: string;
+    download?: boolean;
+}
+const { href, className, download} = Astro.props;
+---
+
+<a
+    href={href}
+    class="border-2 border-primary-500 text-primary-400 w-[180px] text-center text-xl font-semibold rounded-large py-3 transition ease-out duration-200 hover:scale-105"
+    download={download}
+>
+    <slot />
+</a>

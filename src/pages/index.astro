@@ -1,8 +1,10 @@
 ---
-import "../css/base.css"
+import "../css/base.css";
 import Layout from "../layouts/Layout.astro";
 import { Picture } from "@astrojs/image/components";
 import MainCard from "../components/shared/MainCard.astro";
+import PrimaryLinkButton from "../components/shared/PrimaryLinkButton.astro";
+import SecondaryLinkButton from "../components/shared/SecondaryLinkButton.astro";
 ---
 
 <Layout>
@@ -61,16 +63,14 @@ import MainCard from "../components/shared/MainCard.astro";
                     >
                 </p>
                 <div class="mt-8 flex gap-4">
-                    <a
-                        href="/contact"
-                        class="bg-primary-500 text-white w-[180px] text-center text-xl font-semibold rounded-large py-3 transition ease-out duration-200 hover:scale-105 hover:bg-primary-600"
-                        >Contact</a
-                    >
-                    <a
+                    <PrimaryLinkButton href="/contact"
+                        >Contact
+                    </PrimaryLinkButton>
+                    <SecondaryLinkButton
                         href="https://pub-b01531a0b7c646a4ac161b07b0950d81.r2.dev/Dimas-Prabowo-Ashidiqi-Resume.pdf"
-                        class="border-2 border-primary-500 text-primary-400 w-[180px] text-center text-xl font-semibold rounded-large py-3 transition ease-out duration-200 hover:scale-105"
-                        download="">Get Resume</a
-                    >
+                        download
+                        >Resume
+                    </SecondaryLinkButton>
                 </div>
             </div>
         </div>
@@ -95,7 +95,9 @@ import MainCard from "../components/shared/MainCard.astro";
                     </div>
                 </div>
             </div>
-            <MainCard className="z-20 absolute -bottom-10 right-0 -rotate-[40deg]">
+            <MainCard
+                className="z-20 absolute -bottom-10 right-0 -rotate-[40deg]"
+            >
                 <p class="font-medium text-center text-tsecondary">
                     iOS Developer Intern @ Apple<br /> Developer Academy Cohort 2023
                 </p>
