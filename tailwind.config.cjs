@@ -7,7 +7,7 @@ module.exports = {
         colors: {
             transparent: "transparent",
             slate: colors.slate,
-			white: colors.white,
+            white: colors.white,
             primary: {
                 700: "#2E31E4",
                 600: "#4739ED",
@@ -24,6 +24,9 @@ module.exports = {
             tsecondary: "#9DACBE",
             tTertiary: "#6F869F",
             tQuaternary: "#52637A",
+        },
+        container: {
+            center: true,
         },
         extend: {
             fontFamily: {
