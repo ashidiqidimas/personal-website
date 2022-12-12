@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .da-text-large-title {
+        @apply font-bold text-5xl sm:text-6xl lg:text-7xl;
+    }
+
+    .da-text-h1 {
+        @apply font-bold text-5xl lg:text-6xl;
+    }
+
+    .da-text-h2 {
+        @apply font-bold text-3xl;
+    }
+
+    .da-text-body1 {
+        @apply text-xl;
+    }
+}

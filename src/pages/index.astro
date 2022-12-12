@@ -45,13 +45,13 @@ import SecondaryLinkButton from "../components/shared/SecondaryLinkButton.astro"
         </div>
         <div class="flex basis-1/2 items-center justify-center px-8">
             <div>
-                <p class="ml-[-2px] text-3xl font-medium text-tsecondary">
+                <p class="ml-[-2px] da-text-h2 font-medium text-tsecondary">
                     Hello, I'm
                 </p>
-                <h1 class="ml-[-6px] mt-2 text-7xl font-bold text-primary-500">
+                <h1 class="ml-[-6px] mt-2 da-text-large-title text-primary-500">
                     Dimas Ashidiqi
                 </h1>
-                <p class="mt-8 text-tsecondary text-xl">
+                <p class="mt-8 text-tsecondary da-text-body1">
                     I'm an <span class="font-semibold text-tPrimary"
                         >iOS developer</span
                     > who believes every user deserves great user experiece and high-performing
@@ -75,7 +75,7 @@ import SecondaryLinkButton from "../components/shared/SecondaryLinkButton.astro"
             </div>
         </div>
         <div
-            class="bg-slate-50 h-[700px] w-[400px] rounded-b-full z-20 absolute right-0 -top-20 rotate-[40deg]"
+            class="bg-slate-50 h-[700px] w-[400px] rounded-b-full z-20 absolute lg:-right-16 xl:right-0 -top-20 rotate-[40deg] hidden lg:block"
         >
             <div
                 class="h-[700px] w-[400px] bg-primary-500 rounded-b-full z-20 absolute overflow-hidden"
@@ -102,6 +102,10 @@ import SecondaryLinkButton from "../components/shared/SecondaryLinkButton.astro"
                     iOS Developer Intern @ Apple<br /> Developer Academy Cohort 2023
                 </p>
             </MainCard>
+        </div>
+        <div class="absolute right-0 bottom-10 flex items-center gap-4">
+            <p class="text-tTertiary text-lg">dimas@ashidiqi.com</p>
+            <div class="w-[170px] h-[1.5px] bg-primary-500" />
         </div>
     </main>
 </Layout>
